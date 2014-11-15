@@ -1,0 +1,59 @@
+body { background-color: #eee; }
+
+#home-full-width {
+	background-color: #ffff99;
+
+}
+
+#home-full-width nav {
+	margin-top: 30px;
+}
+
+#home-full-width .jumbotron {
+	background-color: #ffff99;
+	background: url('/images/tires.png') center top no-repeat;
+	color: #000;
+}
+
+#home-form {
+	margin-top: -69px;
+}
+
+/* parallax */
+
+.parallax {
+	/*background-image: attr(data-bg-image url);*/
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: cover;
+
+	/*min-height: 300px;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: auto;
+
+	color:#fff;
+}
+
+.parallax h1, .parallax h2, .parallax h3, .parallax h4, .parallax h5, .parallax h6 {
+	font-weight: lighter;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+	/*small {
+		color: inherit;
+		font-weight: lighter;
+	}*/
+}
+
+@media (max-width: 992px) {
+	.parallax {
+		background-attachment: initial;
+		background-size: cover;
+	}
+}
+
+/* footer */
+
+#page-footer {
+	background-color: #000;
+}
