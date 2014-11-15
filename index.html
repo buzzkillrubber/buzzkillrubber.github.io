@@ -2,6 +2,8 @@
 layout: home
 ---
 
+{% include _login_modal.html %}
+
 <div id="home-full-width">
 	<div class="container">
 		{% include _nav.html %}
@@ -59,7 +61,7 @@ layout: home
 	
 	<div class="row">
 		{% for time in (1..6) %}	
-		<div class="col-sm-4">
+		<div class="col-sm-6 col-md-4">
 			<div class="well">
 				<div class="media">
 					<span class="media-left">

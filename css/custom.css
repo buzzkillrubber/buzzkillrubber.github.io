@@ -19,6 +19,14 @@ body { background-color: #eee; }
 	margin-top: -69px;
 }
 
+@media (min-width: 768px) {
+	#nav_search_field { width: 150px; }
+}
+
+.log-btn {
+	background-color: #EF6E41;
+}
+
 /* parallax */
 
 .parallax {
