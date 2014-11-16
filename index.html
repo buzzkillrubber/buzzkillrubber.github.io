@@ -60,15 +60,15 @@ layout: home
 
 	
 	<div class="row">
-		{% for time in (1..6) %}	
+		{% for icon in site.data.icons %}	
 		<div class="col-sm-6 col-md-4">
 			<div class="well">
 				<div class="media">
 					<span class="media-left">
-						<i class="fa fa-fw fa-4x fa-car"></i>
+						<i class="fa fa-fw fa-4x fa-{{icon.icon}}"></i>
 					</span>
 					<div class="media-body">
-						<h4 class="media-heading">Media heading</h4>
+						<h4 class="media-heading">{{icon.title}}</h4>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt. <a href="#">Learn More.</a>
 					</div>
 				</div>
