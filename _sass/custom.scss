@@ -1,0 +1,91 @@
+body { background-color: #eee; }
+
+#logo {
+	width: 200px;
+	margin-top: -50px;
+}
+
+#home-full-width {
+	background-color: #ffff99;
+
+	nav {	margin-top: 30px; }
+
+	.jumbotron {
+		background: url('/images/tires.png') center top no-repeat #ff9;
+		color: #000;
+	}
+}
+
+#home-form {
+	margin-top: -69px;
+}
+
+@media (min-width: 768px) {
+	#nav_search_field { width: 125px; }
+}
+
+.log-btn {
+	background-color: #EF6E41;
+}
+
+/* parallax */
+
+.parallax {
+	background: {
+		/*image: attr(data-bg-image url);*/
+		repeat: no-repeat;
+		position: center top;
+		attachment: fixed;
+		size: cover;
+	}
+	padding: 10px 0;
+	overflow: auto;
+
+	color:#fff;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: lighter;
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+	}
+}
+
+@media (max-width: 1200px /*992px*/) {
+	.parallax {
+		background-attachment: initial;
+		background-size: cover;
+	}
+}
+
+/* footer */
+#page-footer {
+	background-color: #000;
+}
+
+/* custom buttons */
+.btn-facebook {
+	background-color: #3B5998;
+	border-color: #3B5998;
+	color: #fff;
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		background-color: #344e86;
+		border-color: #2d4373;
+	}
+	&.disabled:hover,
+	&.disabled:focus,
+	&.disabled:active,
+	&.disabled.active,
+	&[disabled]:hover,
+	&[disabled]:focus,
+	&[disabled]:active,
+	&[disabled].active,
+	fieldset[disabled] &:hover,
+	fieldset[disabled] &:focus,
+	fieldset[disabled] &:active,
+	fieldset[disabled] &.active {
+		background-color: #3B5998;
+		border-color: #3B5998;
+	}
+}

@@ -3,7 +3,7 @@
 $ ->
 
 	# parallax
-	if $(window).width() >= 992
+	if $(window).width() >= 1200 #992
 		$.fn.parallax = (options) ->
 			windowHeight = $(window).height()
 			settings = $.extend(
