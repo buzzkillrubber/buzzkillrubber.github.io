@@ -3,7 +3,29 @@
 	<div class="container">
 
 		<div class="row">
-		footer
+			
+			<div class="col-sm-4 col-sm-push-8">
+				<ul class="list-inline">
+					<li><a href="">Terms</a></li>
+					<li><a href="">Privacy</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<ul class="list-inline text-center">
+					{% for social in site.data.social %}
+					<li>
+						<a href="{{social.link}}{{social.id}}" target="_blank" title="{{social.name}}">
+							<i class="fa fa-{{social.icon}} fa-2x"></i>
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="col-sm-4 col-sm-pull-8 small">
+				&copy; Copyright 2014 {{site.title}}
+			</div>
+
 		</div>
 
 	</div>

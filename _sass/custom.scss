@@ -58,7 +58,19 @@ body { background-color: #eee; }
 
 /* footer */
 #page-footer {
-	background-color: #000;
+	background-color: #892300;
+	color: #FF926D;
+	padding: 30px 0;
+	a {
+		color: #EF6E41;
+		&:hover { color: #FF926D; }
+	}
+}
+
+@media (max-width: 767px) {
+	#page-footer {
+		text-align: center !important;
+	}
 }
 
 /* custom buttons */
