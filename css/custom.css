@@ -20,7 +20,7 @@ body { background-color: #eee; }
 }
 
 @media (min-width: 768px) {
-	#nav_search_field { width: 150px; }
+	#nav_search_field { width: 125px; }
 }
 
 .log-btn {
