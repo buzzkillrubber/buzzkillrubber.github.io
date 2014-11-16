@@ -1,5 +1,10 @@
 body { background-color: #eee; }
 
+#logo {
+	width: 200px;
+	margin-top: -50px;
+}
+
 #home-full-width {
 	background-color: #ffff99;
 
